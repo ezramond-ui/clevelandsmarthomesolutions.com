@@ -1,0 +1,17 @@
+{
+  "name": "clevelandsmarthomesolutions",
+  "version": "1.0.0",
+  "description": "Cleveland Smart Home Solutions — Smart Living, Done Simply. Premium smart home installation across Northeast Ohio.",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && node serve.js",
+    "serve": "node serve.js",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
+  },
+  "author": "Cleveland Smart Home Solutions",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "nodemailer": "^6.9.13"
+  }
+}
