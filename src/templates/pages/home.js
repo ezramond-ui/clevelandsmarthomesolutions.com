@@ -44,19 +44,8 @@ module.exports = function home() {
         </ul>
       </div>
       <div class="hero-visual">
-        <figure class="hero-media">
-          <img class="hero-photo" src="/images/thermostat-install.jpg" width="1408" height="768"
-               alt="Cleveland Smart Home Solutions technician installing a smart thermostat on a living room wall" loading="eager" decoding="async">
-          <div class="hero-card" aria-hidden="true">
-            <div class="hero-card-top">
-              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-              <span class="hero-card-title">Good Evening</span>
-            </div>
-            <div class="hero-scene"><span>Living Room</span><span class="hero-toggle on"></span></div>
-            <div class="hero-scene"><span>Kitchen</span><span class="hero-toggle on"></span></div>
-            <div class="hero-scene dim"><span>Movie Night</span><span class="hero-pill">Tap to start</span></div>
-          </div>
-        </figure>
+        <img class="hero-photo" src="/images/thermostat-install.jpg" width="1408" height="768"
+             alt="Cleveland Smart Home Solutions technician installing a smart thermostat on a living room wall" loading="eager" decoding="async">
       </div>
     </div>
   </section>
@@ -64,6 +53,26 @@ module.exports = function home() {
   ${C.trustRow()}
 
   ${C.differentiator('band')}
+
+  <section class="section why-section" aria-labelledby="why-h">
+    <div class="container why-inner">
+      <figure class="why-media">
+        <img src="/images/technician-tablet-kitchen.jpg" width="1408" height="768"
+             alt="Cleveland Smart Home Solutions technician setting up a smart home system on a tablet in a client’s kitchen" loading="lazy" decoding="async">
+      </figure>
+      <div class="why-copy">
+        <span class="eyebrow">Why choose us</span>
+        <h2 id="why-h">A smart home partner who treats your house like their own</h2>
+        <p>We’re local, hands-on, and genuinely invested in getting it right. From the first walkthrough to the final tap on your phone, we design, install, and explain everything until your home simply <em>works</em>.</p>
+        <ul class="check-list">
+          <li>${C.icon('check', 'icon icon-sm icon-accent')}<span>One specialist from quote to walkthrough — no rotating crews</span></li>
+          <li>${C.icon('check', 'icon icon-sm icon-accent')}<span>Tidy, minimal-impact installs and spotless cleanup</span></li>
+          <li>${C.icon('check', 'icon icon-sm icon-accent')}<span>We set it up and show you exactly how to use it</span></li>
+        </ul>
+        <a class="btn btn-accent" href="${site.primaryCta.href}">${esc(site.primaryCta.label)}</a>
+      </div>
+    </div>
+  </section>
 
   <section class="section" aria-labelledby="services-h">
     <div class="container">

@@ -17,7 +17,6 @@ const NAV = [
   { label: 'Landlords', href: '/landlords.html' },
   { label: 'Service Areas', href: '/service-areas.html' },
   { label: 'Reviews', href: '/reviews.html' },
-  { label: 'About', href: '/about.html' },
   { label: 'Contact', href: '/contact.html' },
 ];
 
@@ -30,10 +29,7 @@ function header(activePath) {
   return `<header class="site-header" id="top">
   <div class="container header-inner">
     <a class="brand" href="/index.html" aria-label="${esc(site.name)} home">
-      <!-- LOGO PLACEHOLDER: drop your logo image here (recommended: /images/logo.svg) -->
-      <span class="brand-logo" role="img" aria-label="Logo placeholder">
-        <span class="brand-mark">CSH</span>
-      </span>
+      <img class="brand-logo" src="/images/logo.png" width="48" height="48" alt="${esc(site.name)} logo">
       <span class="brand-text">
         <span class="brand-name">${esc(site.name)}</span>
         <span class="brand-tag">${esc(site.tagline)}</span>
@@ -76,7 +72,6 @@ function footer() {
         <li><a href="/index.html">Home</a></li>
         <li><a href="/services.html">Services &amp; Pricing</a></li>
         <li><a href="/landlords.html">For Landlords</a></li>
-        <li><a href="/about.html">About Us</a></li>
         <li><a href="/reviews.html">Reviews</a></li>
         <li><a href="/service-areas.html">Service Areas</a></li>
         <li><a href="/contact.html">Contact</a></li>
@@ -107,7 +102,7 @@ function footer() {
  * @param {object} opts
  * @param {string} opts.title       – <title> (unique per page)
  * @param {string} opts.description – meta description (unique per page)
- * @param {string} opts.path        – canonical path, e.g. "/about.html"
+ * @param {string} opts.path        – canonical path, e.g. "/services.html"
  * @param {string} opts.body        – page body HTML
  * @param {string} [opts.jsonLd]    – JSON-LD structured data block(s)
  * @param {string} [opts.bodyClass] – extra class on <body>
@@ -125,7 +120,7 @@ function layout({ title, description, path, body, jsonLd = '', bodyClass = '', o
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
   <link rel="canonical" href="${canonical}">
-  <meta name="theme-color" content="#1b1d21">
+  <meta name="theme-color" content="#0f1d2e">
   <meta name="format-detection" content="telephone=no">
 
   <meta property="og:type" content="${ogType}">

@@ -29,11 +29,17 @@ module.exports = function services() {
 
   const body = `
   ${C.breadcrumbTrail(crumbs)}
-  <section class="page-hero">
-    <div class="container">
-      <span class="eyebrow">Services &amp; pricing</span>
-      <h1>Smart home services, installed simply</h1>
-      <p class="lead">Everything we do starts with the same promise: a clean, elegant install with <strong>no major construction, no mess, and no stress</strong>. Choose a package, or mix and match the services below.</p>
+  <section class="page-hero services-hero">
+    <div class="container services-hero-inner">
+      <div class="services-hero-copy">
+        <span class="eyebrow">Services &amp; pricing</span>
+        <h1>Smart home services, installed simply</h1>
+        <p class="lead">Everything we do starts with the same promise: a clean, elegant install with <strong>no major construction, no mess, and no stress</strong>. Choose a package, or mix and match the services below.</p>
+      </div>
+      <figure class="services-hero-media">
+        <img src="/images/smart-switch-install.jpg" width="1408" height="768"
+             alt="Cleveland Smart Home Solutions technician installing a smart light switch with no wall damage" loading="eager" decoding="async">
+      </figure>
     </div>
   </section>
 
@@ -58,10 +64,6 @@ module.exports = function services() {
         <h2 id="key-h">What we install</h2>
         <p class="lead">Smart lighting is our core focus — the rest brings your whole home together.</p>
       </div>
-      <figure class="section-figure">
-        <img src="/images/smart-switch-install.jpg" width="1408" height="768"
-             alt="Cleveland Smart Home Solutions technician installing a smart light switch with no wall damage" loading="lazy" decoding="async">
-      </figure>
       <div class="service-grid">${C.serviceGrid()}</div>
     </div>
   </section>

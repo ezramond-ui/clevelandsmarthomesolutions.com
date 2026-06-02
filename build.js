@@ -16,7 +16,6 @@ const { layout } = require('./src/templates/layout');
 // Page builders.
 const home = require('./src/templates/pages/home');
 const services = require('./src/templates/pages/services');
-const about = require('./src/templates/pages/about');
 const contact = require('./src/templates/pages/contact');
 const landlords = require('./src/templates/pages/landlords');
 const reviews = require('./src/templates/pages/reviews');
@@ -95,7 +94,6 @@ copyDir(PUBLIC, DIST);
 const pages = [
   home(),
   services(),
-  about(),
   contact(),
   landlords(),
   reviews(),
