@@ -29,11 +29,7 @@ function header(activePath) {
   return `<header class="site-header" id="top">
   <div class="container header-inner">
     <a class="brand" href="/index.html" aria-label="${esc(site.name)} home">
-      <img class="brand-logo" src="/images/logo.png" width="48" height="48" alt="${esc(site.name)} logo">
-      <span class="brand-text">
-        <span class="brand-name">${esc(site.name)}</span>
-        <span class="brand-tag">${esc(site.tagline)}</span>
-      </span>
+      <img class="brand-logo" src="/images/logo.png" width="58" height="58" alt="${esc(site.name)} logo">
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
       <span class="nav-toggle-bar"></span>

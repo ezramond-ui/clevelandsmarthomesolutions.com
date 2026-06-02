@@ -127,10 +127,8 @@ strong { font-weight: 600; color: var(--ink); }
 .brand { display: inline-flex; align-items: center; gap: .8rem; color: var(--ink); }
 .brand:hover { color: var(--ink); }
 .brand-logo {
-  width: 48px; height: 48px; border-radius: 12px; flex: none;
-  object-fit: cover; background: #fff;
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-sm);
+  width: 58px; height: 58px; flex: none;
+  object-fit: contain; border-radius: 10px;
 }
 .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
 .brand-name { font-family: var(--serif); font-weight: 600; font-size: 1.12rem; letter-spacing: -.01em; }
