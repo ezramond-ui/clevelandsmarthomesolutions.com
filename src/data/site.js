@@ -17,11 +17,13 @@ module.exports = {
   url: 'https://www.clevelandsmarthomesolutions.com',
 
   // ── PLACEHOLDER CONTACT DETAILS ──────────────────────────────────────
-  phone: '(216) 555-0123',           // PLACEHOLDER phone number
-  phoneHref: '+12165550123',         // PLACEHOLDER phone (tel: format)
+  phone: '(216) 284-9433',
+  phoneHref: '+12162849433',
   email: 'hello@clevelandsmarthomesolutions.com', // PLACEHOLDER email
-  // Where contact-form and review submissions are emailed for approval:
-  ownerEmail: 'owner@clevelandsmarthomesolutions.com', // PLACEHOLDER
+  // Where contact-form and review submissions are emailed for approval.
+  // Used as the default MAIL_TO recipient for the contact API (see api/_lib/mailer.js).
+  ownerEmail: 'support@clevelandsmarthomesolutions.com',
+  salesEmail: 'sales@clevelandsmarthomesolutions.com',
 
   // ── BUSINESS LOCATION ────────────────────────────────────────────────
   address: {
