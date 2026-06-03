@@ -38,7 +38,7 @@ module.exports = function reviews() {
     <div class="container">
       <span class="eyebrow">Reviews &amp; testimonials</span>
       <h1>Trusted by neighbors across ${esc(site.serviceAreaLabel)}</h1>
-      <p class="lead">We’re a new company with an experienced founder — and we’re building our reputation one happy home at a time. Here’s what our customers are saying.</p>
+      <p class="lead">We’re building our reputation one happy home at a time. Here’s what our customers are saying.</p>
       <div class="rating-summary">
         <span class="rating-big">${avg}</span>
         <span class="rating-stars" aria-label="${avg} out of 5 stars">★★★★★</span>

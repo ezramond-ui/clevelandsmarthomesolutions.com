@@ -38,9 +38,9 @@ module.exports = {
   },
   serviceAreaLabel: 'Northeast Ohio',
 
-  hours: 'Mon–Sat, 8am–7pm',
+  hours: 'Monday–Friday, 8:30am–5:00pm',
   hoursSchema: [
-    { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '08:00', closes: '19:00' },
+    { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:30', closes: '17:00' },
   ],
 
   // ── SOCIAL (optional — leave blank to hide) ──────────────────────────

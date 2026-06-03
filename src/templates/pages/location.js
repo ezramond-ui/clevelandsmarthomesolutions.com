@@ -13,7 +13,7 @@ const introTemplates = [
   (l) =>
     `${l.name} homeowners trust Cleveland Smart Home Solutions for clean, sophisticated smart home installs. We make ${l.name} homes smarter without the disruption of traditional installations — no demolition, no mess, no stress.`,
   (l) =>
-    `Bringing big-city smart home expertise to ${l.name}, ${site.serviceAreaLabel}. From smart lighting to whole-home automation, we deliver a premium experience to ${l.name} at honest, local prices — and we keep your home spotless while we do it.`,
+    `Bringing premium smart home technology to ${l.name}, ${site.serviceAreaLabel}. From smart lighting to whole-home automation, we deliver a premium experience to ${l.name} at honest, local prices — and we keep your home spotless while we do it.`,
 ];
 
 function locationFaq(l) {

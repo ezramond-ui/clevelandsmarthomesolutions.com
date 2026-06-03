@@ -51,7 +51,7 @@ function differentiator(variant = 'band') {
       <div class="section-head center">
         <span class="eyebrow">The premium difference</span>
         <h2 id="diff-h">Smart home technology, without tearing your home apart</h2>
-        <p class="lead">Many companies treat smart home installation like a renovation — opening walls, running wire, and disrupting your home and your life for days. We do the opposite. Cleveland Smart Home Solutions specializes in <strong>clean, simple, elegant installs with minimal impact</strong>. It’s not a lesser service — it’s a more sophisticated one.</p>
+        <p class="lead">Many companies treat smart home installation like a renovation — opening walls, running wire, and disrupting your home and your life for days. We do the opposite. Cleveland Smart Home Solutions specializes in <strong>clean, simple, elegant installs with minimal impact</strong>.</p>
       </div>
       <div class="diff-grid">${cards}</div>
     </div>
@@ -130,8 +130,8 @@ function trustRow() {
   const items = [
     { icon: 'pin', t: 'Locally owned', d: 'Based in University Heights' },
     { icon: 'shield', t: 'Licensed &amp; insured', d: 'Protected from start to finish' },
-    { icon: 'hand', t: 'Experienced founder', d: 'Years of hands-on installs' },
-    { icon: 'star', t: 'Honest, local pricing', d: 'Big-city expertise, fair rates' },
+    { icon: 'hand', t: 'Genuine care', d: 'We treat your home like our own' },
+    { icon: 'star', t: 'Honest, local pricing', d: 'Fair rates, never an upsell' },
   ];
   return `<section class="trust-row" aria-label="Why homeowners trust us">
     <div class="container trust-grid">
