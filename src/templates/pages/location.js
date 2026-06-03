@@ -28,11 +28,11 @@ function locationFaq(l) {
     },
     {
       q: `Do you work with landlords and rental properties in ${l.name}?`,
-      a: `Absolutely. Every package we offer is ideal for ${l.name} landlords and rental owners who want remote control, scheduling, and smart management of their properties — all from a single app, with minimal disruption to occupied units.`,
+      a: `Absolutely. Everything we install is ideal for ${l.name} landlords and rental owners who want remote control, scheduling, and smart management of their properties — all from a single app, with minimal disruption to occupied units.`,
     },
     {
       q: `How much does a smart home install in ${l.name} cost?`,
-      a: `Every quote is custom and free. Pricing depends on the size of your home and the package you choose — Essentials, Comfort, or Signature. We’ll give you an honest, transparent recommendation with no pressure and no upsell.`,
+      a: `Every quote is custom and free. Pricing depends on the size of your home and the upgrades you choose. We’ll give you an honest, transparent recommendation with no pressure and no upsell.`,
     },
   ];
 }
@@ -137,14 +137,11 @@ function renderLocation(l, index) {
       <ul class="loc-services">${svcItems}</ul>
 
       <h2>Landlords &amp; rental owners in ${esc(l.name)}</h2>
-      <p>Own a rental ${placeWord === 'neighborhood' ? 'in the ' + esc(l.name) + ' neighborhood' : 'in ' + esc(l.name)}? Every one of our packages is ideal for landlords who want remote control and smart management of their properties. Adjust lighting and schedules between tenants, issue smart-lock codes for showings, and oversee multiple units from one app — all installed with minimal disruption to occupied units. <a href="/landlords.html">See our landlord solutions →</a></p>
-
-      <h2>Choose your ${esc(l.name)} smart home package</h2>
-    </div>
-    <div class="container">
-      <div class="tier-grid">${C.tierCards({ full: false })}</div>
+      <p>Own a rental ${placeWord === 'neighborhood' ? 'in the ' + esc(l.name) + ' neighborhood' : 'in ' + esc(l.name)}? Everything we install is ideal for landlords who want remote control and smart management of their properties. Adjust lighting and schedules between tenants, issue smart-lock codes for showings, and oversee multiple units from one app — all installed with minimal disruption to occupied units. <a href="/landlords.html">See our landlord solutions →</a></p>
     </div>
   </section>
+
+  ${C.popularInstalls()}
 
   ${C.differentiator('band')}
 

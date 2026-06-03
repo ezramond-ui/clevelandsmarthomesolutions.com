@@ -84,6 +84,43 @@ function tierCards({ full = false } = {}) {
     .join('');
 }
 
+// Popular installs — a curated highlight of our most-requested upgrades.
+// Replaces the old tier cards on the home and location pages, so both share
+// the same simple card layout.
+const popularInstallIds = [
+  'smart-lighting',
+  'three-way-switches',
+  'smart-thermostats',
+  'smart-locks',
+  'doorbell-cameras',
+  'smart-shades',
+];
+
+function popularInstalls() {
+  const cards = popularInstallIds
+    .map((id) => keyServices.find((s) => s.id === id))
+    .filter(Boolean)
+    .map(
+      (s) => `<article class="service-card">
+      ${icon(s.icon, 'icon icon-lg icon-accent')}
+      <h3>${esc(s.name)}</h3>
+      <p>${esc(s.blurb)}</p>
+    </article>`
+    )
+    .join('');
+  return `<section class="section section-soft" aria-labelledby="popular-h">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Popular installs</span>
+        <h2 id="popular-h">Our most-requested smart upgrades</h2>
+        <p class="lead">No rigid packages — just the upgrades homeowners ask for most. Mix and match what fits your home, and we’ll figure out the best solution for you.</p>
+      </div>
+      <div class="service-grid">${cards}</div>
+      <div class="center mt-lg"><a class="btn btn-accent btn-lg" href="/contact.html">Get a Free Quote</a></div>
+    </div>
+  </section>`;
+}
+
 // Key services grid.
 function serviceGrid() {
   return keyServices
@@ -246,6 +283,7 @@ module.exports = {
   icon,
   differentiator,
   tierCards,
+  popularInstalls,
   serviceGrid,
   processSteps,
   trustRow,

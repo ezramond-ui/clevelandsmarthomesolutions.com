@@ -86,16 +86,7 @@ module.exports = function home() {
     </div>
   </section>
 
-  <section class="section section-soft" aria-labelledby="tiers-h">
-    <div class="container">
-      <div class="section-head center">
-        <span class="eyebrow">Simple, honest packages</span>
-        <h2 id="tiers-h">Three ways to start smart</h2>
-        <p class="lead">Whether you’re dipping your toes in or designing a whole-home experience, there’s a tier that fits — and every one is great for landlords, too.</p>
-      </div>
-      <div class="tier-grid">${C.tierCards({ full: false })}</div>
-    </div>
-  </section>
+  ${C.popularInstalls()}
 
   <section class="section landlord-feature" aria-labelledby="ll-h">
     <div class="container landlord-inner">

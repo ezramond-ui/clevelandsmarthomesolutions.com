@@ -1,6 +1,5 @@
 const { layout, site, esc } = require('../layout');
 const C = require('../components');
-const { tiers, keyServices } = require('../../data/services');
 
 module.exports = function services() {
   const crumbs = [
@@ -14,14 +13,8 @@ module.exports = function services() {
     serviceType: 'Smart home installation',
     provider: { '@id': site.url + '/#business' },
     areaServed: site.serviceAreaLabel,
-    hasOfferCatalog: {
-      '@type': 'OfferCatalog',
-      name: 'Smart home packages',
-      itemListElement: tiers.map((t) => ({
-        '@type': 'Offer',
-        itemOffered: { '@type': 'Service', name: `${t.name} — ${t.headline}`, description: t.summary },
-      })),
-    },
+    description:
+      'Custom smart home installation tailored to each home — smart lighting, switches, thermostats, locks, shades and full home automation, with free quotes across NE Ohio.',
   };
 
   const jsonLd =
@@ -45,15 +38,14 @@ module.exports = function services() {
 
   ${C.differentiator('plain')}
 
-  <section class="section section-soft" aria-labelledby="tiers-h">
+  <section class="section section-soft" aria-labelledby="quote-h">
     <div class="container">
       <div class="section-head center">
-        <span class="eyebrow">Three tiers, one standard of care</span>
-        <h2 id="tiers-h">Find the right fit for your home</h2>
-        <p class="lead">Pricing is custom because every home is different. Each quote is honest, transparent, and free — and every tier is also ideal for landlords and rental owners.</p>
+        <span class="eyebrow">Honest, custom pricing</span>
+        <h2 id="quote-h">Every home is different</h2>
+        <p class="lead">There’s no one-size-fits-all package here. Tell us about your home and how you’d like to live in it, and we will figure out the best solution for you — honest, transparent, and always free to quote.</p>
+        <p class="center mt-lg"><a class="btn btn-accent btn-lg" href="/contact.html">Get a Free Quote</a></p>
       </div>
-      <div class="tier-grid">${C.tierCards({ full: true })}</div>
-      <p class="center muted mt-lg">Not sure which tier fits? <a href="/contact.html">Tell us about your home</a> and we’ll recommend the right starting point — never an upsell.</p>
     </div>
   </section>
 
@@ -72,8 +64,8 @@ module.exports = function services() {
     <div class="container landlord-inner">
       <div class="landlord-copy">
         <span class="eyebrow">Built for landlords, too</span>
-        <h2 id="ll-h">Every package works for rental properties</h2>
-        <p>Each tier — Essentials, Comfort, and Signature — is designed to give rental owners remote control, scheduling, and smart management of their properties. Manage one unit or many from a single app.</p>
+        <h2 id="ll-h">Built for rental properties</h2>
+        <p>Whatever solution we design gives rental owners remote control, scheduling, and smart management of their properties. Manage one unit or many from a single app.</p>
         <a class="btn btn-accent" href="/landlords.html">See landlord solutions</a>
       </div>
       <div class="landlord-card">
@@ -94,7 +86,7 @@ module.exports = function services() {
     html: layout({
       title: `Smart Home Services & Pricing | ${site.shortName} Solutions`,
       description:
-        'Smart lighting, three-way switches, thermostats, locks, shades & full home automation. Three honest packages — Essentials, Comfort & Signature — installed with no mess. Free quotes in NE Ohio.',
+        'Smart lighting, three-way switches, thermostats, locks, shades & full home automation. Custom solutions tailored to your home, installed with no mess. Free quotes in NE Ohio.',
       path: '/services.html',
       body,
       jsonLd,
