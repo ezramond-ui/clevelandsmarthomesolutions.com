@@ -32,7 +32,7 @@ function getTransport() {
 }
 
 // Default recipient for form submissions when MAIL_TO isn't set in the host env.
-const DEFAULT_MAIL_TO = 'support@clevelandsmarthomesolutions.com';
+const DEFAULT_MAIL_TO = 'ezra@clevelandsmarthomesolutions.com';
 
 async function sendMail({ subject, text, html, replyTo }) {
   const to = process.env.MAIL_TO || DEFAULT_MAIL_TO;

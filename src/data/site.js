@@ -22,7 +22,7 @@ module.exports = {
   email: 'hello@clevelandsmarthomesolutions.com', // PLACEHOLDER email
   // Where contact-form and review submissions are emailed for approval.
   // Used as the default MAIL_TO recipient for the contact API (see api/_lib/mailer.js).
-  ownerEmail: 'support@clevelandsmarthomesolutions.com',
+  ownerEmail: 'ezra@clevelandsmarthomesolutions.com',
   salesEmail: 'sales@clevelandsmarthomesolutions.com',
 
   // ── BUSINESS LOCATION ────────────────────────────────────────────────
