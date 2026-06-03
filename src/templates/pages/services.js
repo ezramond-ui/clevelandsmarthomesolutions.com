@@ -78,7 +78,7 @@ module.exports = function services() {
   return {
     path: 'services.html',
     html: layout({
-      title: `Smart Home Services & Pricing | ${site.shortName} Solutions`,
+      title: `Smart Home Services | ${site.shortName} Solutions`,
       description:
         'Smart lighting, three-way switches, thermostats, locks, shades & full home automation. Custom solutions tailored to your home, installed with no mess. Free quotes in NE Ohio.',
       path: '/services.html',
