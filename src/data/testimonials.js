@@ -27,14 +27,14 @@ module.exports = [
   },
   {
     quote:
-      'The Signature package was worth every penny. Lights, locks, thermostat, and shades all in one app, all working together. Effortless is the right word.',
+      'Worth every penny. Lights, locks, thermostat, and shades all in one app, all working together. Effortless is the right word.',
     author: 'Anthony C.',
     location: 'Pepper Pike',
     rating: 5,
   },
   {
     quote:
-      'Honest pricing and zero pressure. They recommended the Comfort tier instead of upselling me, and it was exactly right for our home.',
+      'Honest pricing and zero pressure. They recommended exactly what suited our home instead of upselling me, and it was just right.',
     author: 'Sarah M.',
     location: 'Beachwood',
     rating: 5,

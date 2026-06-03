@@ -96,7 +96,7 @@ const popularInstallIds = [
   'smart-shades',
 ];
 
-function popularInstalls() {
+function popularInstalls({ id, lead } = {}) {
   const cards = popularInstallIds
     .map((id) => keyServices.find((s) => s.id === id))
     .filter(Boolean)
@@ -108,12 +108,15 @@ function popularInstalls() {
     </article>`
     )
     .join('');
-  return `<section class="section section-soft" aria-labelledby="popular-h">
+  const leadText =
+    lead ||
+    'No rigid packages — just the upgrades homeowners ask for most. Mix and match what fits your home, and we’ll figure out the best solution for you.';
+  return `<section class="section section-soft"${id ? ` id="${id}"` : ''} aria-labelledby="popular-h">
     <div class="container">
       <div class="section-head center">
         <span class="eyebrow">Popular installs</span>
         <h2 id="popular-h">Our most-requested smart upgrades</h2>
-        <p class="lead">No rigid packages — just the upgrades homeowners ask for most. Mix and match what fits your home, and we’ll figure out the best solution for you.</p>
+        <p class="lead">${esc(leadText)}</p>
       </div>
       <div class="service-grid">${cards}</div>
       <div class="center mt-lg"><a class="btn btn-accent btn-lg" href="/contact.html">Get a Free Quote</a></div>

@@ -1,6 +1,5 @@
 const { layout, site, esc } = require('../layout');
 const C = require('../components');
-const { tiers } = require('../../data/services');
 
 module.exports = function landlords() {
   const crumbs = [
@@ -38,7 +37,7 @@ module.exports = function landlords() {
       <p class="lead">Give your rentals remote control, scheduling, and smart oversight — installed cleanly, with <strong>no major construction and no disruption</strong> to occupied units. Manage one property or a whole portfolio from a single app.</p>
       <div class="hero-actions">
         <a class="btn btn-accent btn-lg" href="/contact.html?tier=landlord">Get a landlord quote</a>
-        <a class="btn btn-outline btn-lg" href="#packages">See packages</a>
+        <a class="btn btn-outline btn-lg" href="#packages">See popular installs</a>
       </div>
     </div>
   </section>
@@ -79,16 +78,11 @@ module.exports = function landlords() {
     </div>
   </section>
 
-  <section class="section" id="packages" aria-labelledby="pk-h">
-    <div class="container">
-      <div class="section-head center">
-        <span class="eyebrow">Built for rentals</span>
-        <h2 id="pk-h">Every package works for landlords</h2>
-        <p class="lead">Each tier is ideal for rental owners who want remote control and smart management of their properties.</p>
-      </div>
-      <div class="tier-grid">${C.tierCards({ full: true })}</div>
-    </div>
-  </section>
+  ${C.popularInstalls({
+    id: 'packages',
+    lead:
+      'Every upgrade we install is ideal for rental owners — remote control, scheduling, and smart management of your properties. Mix and match what fits, and we’ll figure out the best solution for you.',
+  })}
 
   ${C.ctaBand('Simplify how you manage your rentals', 'Tell us about your properties and we’ll design a smart, scalable solution — with a free, honest quote.')}
   `;
