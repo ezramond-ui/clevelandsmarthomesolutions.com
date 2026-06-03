@@ -25,9 +25,9 @@ module.exports = function services() {
   <section class="page-hero services-hero">
     <div class="container services-hero-inner">
       <div class="services-hero-copy">
-        <span class="eyebrow">Services &amp; pricing</span>
+        <span class="eyebrow">Services</span>
         <h1>Smart home services, installed simply</h1>
-        <p class="lead">Everything we do starts with the same promise: a clean, elegant install with <strong>no major construction, no mess, and no stress</strong>. Choose a package, or mix and match the services below.</p>
+        <p class="lead">Everything we do starts with the same promise: a clean, elegant install with <strong>no major construction, no mess, and no stress</strong>. Mix and match the upgrades that fit your home.</p>
       </div>
       <figure class="services-hero-media">
         <img src="/images/smart-switch-install.jpg" width="1408" height="768"
@@ -49,16 +49,10 @@ module.exports = function services() {
     </div>
   </section>
 
-  <section class="section" aria-labelledby="key-h">
-    <div class="container">
-      <div class="section-head center">
-        <span class="eyebrow">Key services</span>
-        <h2 id="key-h">What we install</h2>
-        <p class="lead">Smart lighting is our core focus — the rest brings your whole home together.</p>
-      </div>
-      <div class="service-grid">${C.serviceGrid()}</div>
-    </div>
-  </section>
+  ${C.popularInstalls({
+    lead:
+      'The smart upgrades homeowners ask for most — start with a single room or design a whole connected home. Smart lighting is our core focus, and the rest brings your whole home together.',
+  })}
 
   <section class="section section-soft" aria-labelledby="ll-h">
     <div class="container landlord-inner">

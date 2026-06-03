@@ -67,7 +67,7 @@ function footer() {
       <h2>Explore</h2>
       <ul>
         <li><a href="/index.html">Home</a></li>
-        <li><a href="/services.html">Services &amp; Pricing</a></li>
+        <li><a href="/services.html">Services</a></li>
         <li><a href="/landlords.html">For Landlords</a></li>
         <li><a href="/reviews.html">Reviews</a></li>
         <li><a href="/service-areas.html">Service Areas</a></li>
