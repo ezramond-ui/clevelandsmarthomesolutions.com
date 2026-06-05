@@ -91,6 +91,11 @@ function footer() {
       <p class="footer-fineprint">${esc(site.tagline)}</p>
     </div>
   </div>
+  <div class="footer-legal">
+    <div class="container">
+      <p>&copy; 2026 North Coast Residential Services LLC. All Rights Reserved. Cleveland Smart Home Solutions&trade; is a registered trade name of North Coast Residential Services LLC.</p>
+    </div>
+  </div>
 </footer>`;
 }
 
