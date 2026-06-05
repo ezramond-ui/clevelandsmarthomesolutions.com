@@ -35,7 +35,7 @@ module.exports = function services() {
         <p class="lead">Everything we do starts with the same promise: a clean, elegant install with <strong>no major construction, no mess, and no stress</strong>. Mix and match the upgrades that fit your home.</p>
       </div>
       <figure class="services-hero-media">
-        <img src="/images/smart-switch-install.jpg" width="1408" height="768"
+        <img src="/images/smart-switch-install.jpg?v=2" width="1408" height="768"
              alt="Cleveland Smart Home Solutions technician installing a smart light switch with no wall damage" loading="eager" decoding="async">
       </figure>
     </div>

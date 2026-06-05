@@ -44,7 +44,7 @@ module.exports = function home() {
         </ul>
       </div>
       <div class="hero-visual">
-        <img class="hero-photo" src="/images/thermostat-install.jpg" width="1408" height="768"
+        <img class="hero-photo" src="/images/thermostat-install.jpg?v=2" width="1408" height="768"
              alt="Cleveland Smart Home Solutions technician installing a smart thermostat on a living room wall" loading="eager" decoding="async">
       </div>
     </div>
@@ -59,7 +59,7 @@ module.exports = function home() {
   <section class="section why-section" aria-labelledby="why-h">
     <div class="container why-inner">
       <figure class="why-media">
-        <img src="/images/technician-tablet-kitchen.jpg" width="1408" height="768"
+        <img src="/images/technician-tablet-kitchen.jpg?v=2" width="1408" height="768"
              alt="Cleveland Smart Home Solutions technician setting up a smart home system on a tablet in a client’s kitchen" loading="lazy" decoding="async">
       </figure>
       <div class="why-copy">
