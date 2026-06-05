@@ -22,6 +22,11 @@ module.exports = function services() {
 
   const body = `
   ${C.breadcrumbTrail(crumbs)}
+  ${C.popularInstalls({
+    lead:
+      'The smart upgrades homeowners ask for most — start with a single room or design a whole connected home. Smart lighting is our core focus, and the rest brings your whole home together.',
+  })}
+
   <section class="page-hero services-hero">
     <div class="container services-hero-inner">
       <div class="services-hero-copy">
@@ -48,11 +53,6 @@ module.exports = function services() {
       </div>
     </div>
   </section>
-
-  ${C.popularInstalls({
-    lead:
-      'The smart upgrades homeowners ask for most — start with a single room or design a whole connected home. Smart lighting is our core focus, and the rest brings your whole home together.',
-  })}
 
   <section class="section section-soft" aria-labelledby="ll-h">
     <div class="container landlord-inner">

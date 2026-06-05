@@ -50,6 +50,8 @@ module.exports = function home() {
     </div>
   </section>
 
+  ${C.popularInstalls()}
+
   ${C.trustRow()}
 
   ${C.differentiator('band')}
@@ -85,8 +87,6 @@ module.exports = function home() {
       <div class="center mt-lg"><a class="btn btn-outline" href="/services.html">See all services &amp; pricing</a></div>
     </div>
   </section>
-
-  ${C.popularInstalls()}
 
   <section class="section landlord-feature" aria-labelledby="ll-h">
     <div class="container landlord-inner">

@@ -69,9 +69,9 @@ const keyServices = [
   },
   {
     id: 'three-way-switches',
-    name: 'Three-Way Switch Upgrades',
+    name: 'A Second Switch, Anywhere',
     blurb:
-      'Those tricky staircases and long hallways with two or three switches? We make them smart and reliable — properly, cleanly, the right way.',
+      'Got a light you can only turn on or off from one spot — and the switch is on the wrong side of the room, or only at the bottom of the stairs? Normally, adding a second switch means an electrician opening your walls and fishing wire across the room or up the staircase. We do it without any of that. We install a smart wireless switch exactly where you need it — no wire runs, no holes in your walls, no mess. Just a second switch right where it makes sense.',
     icon: 'switch',
   },
   {
