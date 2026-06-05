@@ -8,8 +8,6 @@ const esc = (s = '') =>
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
 
-const year = new Date().getFullYear();
-
 // Primary navigation, reused everywhere.
 const NAV = [
   { label: 'Home', href: '/index.html' },
@@ -87,7 +85,6 @@ function footer() {
   </div>
   <div class="footer-bottom">
     <div class="container">
-      <p>&copy; ${year} ${esc(site.legalName)}. All rights reserved.</p>
       <p class="footer-fineprint">${esc(site.tagline)}</p>
     </div>
   </div>
