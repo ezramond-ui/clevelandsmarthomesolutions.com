@@ -153,8 +153,6 @@ module.exports = function home() {
 
   ${C.processSteps()}
 
-  ${C.guarantee()}
-
   ${C.ctaBand('Ready for a smarter, simpler home?', 'Book a free, no-pressure in-home consult today. We’ll design a clean install that fits your home and your life.')}
   `;
 

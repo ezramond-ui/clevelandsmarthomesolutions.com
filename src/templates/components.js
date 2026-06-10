@@ -129,6 +129,11 @@ function popularInstalls({ id, lead } = {}) {
         <span class="eyebrow">Popular installs</span>
         <h2 id="popular-h">Our most-requested smart upgrades</h2>
         <p class="lead">${esc(leadText)}</p>
+        ${
+          site.pricing && site.pricing.startingAt
+            ? `<p class="popular-price">Projects start around <strong>${esc(site.pricing.startingAt)}</strong> installed — every quote is free and custom.</p>`
+            : ''
+        }
       </div>
       <div class="service-grid">${cards}</div>
       <div class="center mt-lg">

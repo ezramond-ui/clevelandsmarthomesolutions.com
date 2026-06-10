@@ -24,29 +24,21 @@ function header(activePath) {
     return `<li><a href="${n.href}"${active}>${n.label}</a></li>`;
   }).join('');
 
-  const phoneIcon =
-    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2Z"/></svg>';
-
   return `<header class="site-header" id="top">
   <div class="container header-inner">
     <a class="brand" href="/index.html" aria-label="${esc(site.name)} home">
       <img class="brand-logo" src="/images/logo-mark.png?v=6" width="89" height="76" alt="">
       <span class="brand-name">${esc(site.name)}</span>
     </a>
-    <div class="header-right">
-      <a class="header-call" href="tel:${site.phoneHref}" aria-label="Call or text ${esc(site.phone)}">
-        ${phoneIcon}<span class="header-call-text"><span class="header-call-label">Call or text</span><span class="header-call-num">${esc(site.phone)}</span></span>
-      </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
-        <ul>${links}</ul>
-        <a class="btn btn-accent nav-cta" href="${site.primaryCta.href}">${site.primaryCta.label}</a>
-      </nav>
-    </div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <ul>${links}</ul>
+      <a class="btn btn-accent nav-cta" href="${site.primaryCta.href}">${site.primaryCta.label}</a>
+    </nav>
   </div>
 </header>`;
 }
@@ -157,7 +149,7 @@ function layout({ title, description, path, body, jsonLd = '', bodyClass = '', o
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap">
-  <link rel="stylesheet" href="/css/styles.css?v=12">
+  <link rel="stylesheet" href="/css/styles.css?v=13">
   ${jsonLd}
 </head>
 <body class="${bodyClass}">

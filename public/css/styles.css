@@ -145,14 +145,6 @@ strong { font-weight: 600; color: var(--ink); }
 }
 .nav-cta { padding: .62rem 1.15rem; }
 
-.header-right { display: flex; align-items: center; gap: 1.2rem; }
-.header-call { display: inline-flex; align-items: center; gap: .55rem; color: var(--ink); }
-.header-call svg { width: 22px; height: 22px; color: var(--accent); flex: none; }
-.header-call:hover { color: var(--accent-dark); }
-.header-call-text { display: flex; flex-direction: column; line-height: 1.1; }
-.header-call-label { font-size: .7rem; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); font-weight: 600; }
-.header-call-num { font-weight: 700; font-size: .98rem; }
-
 .nav-toggle { display: none; background: none; border: 0; cursor: pointer; padding: .5rem; flex-direction: column; gap: 5px; }
 .nav-toggle-bar { width: 24px; height: 2px; background: var(--ink); border-radius: 2px; transition: var(--transition); }
 .nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
@@ -164,12 +156,13 @@ strong { font-weight: 600; color: var(--ink); }
    ========================================================================= */
 .hero { background: linear-gradient(160deg, var(--accent-soft), var(--bg) 65%); overflow: hidden; }
 .hero-inner {
-  display: grid; grid-template-columns: 1.05fr .95fr; gap: 3rem; align-items: center;
-  padding: clamp(3rem, 6vw, 5.5rem) 0;
+  display: grid; grid-template-columns: 1.05fr .95fr; gap: 2.5rem; align-items: center;
+  padding: clamp(1.75rem, 3.5vw, 3rem) 0;
 }
-.hero-copy h1 { margin-bottom: 1rem; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin: 1.8rem 0 1.4rem; }
-.hero-points { display: flex; flex-wrap: wrap; gap: 1.2rem; list-style: none; color: var(--ink-soft); font-weight: 500; font-size: .95rem; }
+.hero-copy h1 { font-size: clamp(1.95rem, 4vw, 2.9rem); margin-bottom: .7rem; }
+.hero-copy .lead { font-size: 1.08rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin: 1.3rem 0 .9rem; }
+.hero-points { display: flex; flex-wrap: wrap; gap: .8rem 1.4rem; list-style: none; color: var(--ink-soft); font-weight: 500; font-size: .92rem; }
 .hero-points li { display: inline-flex; align-items: center; gap: .4rem; }
 
 .hero-visual { display: flex; justify-content: center; align-items: center; }
@@ -481,7 +474,9 @@ strong { font-weight: 600; color: var(--ink); }
    CTA reassurance note
    ========================================================================= */
 .cta-note { font-size: .85rem; color: var(--muted); margin: .9rem 0 0; }
-.hero-actions + .cta-note { margin-top: -.4rem; margin-bottom: 1.4rem; }
+.hero-actions + .cta-note { margin-top: -.3rem; margin-bottom: 1rem; }
+.popular-price { font-size: 1.02rem; color: var(--ink-soft); margin: .9rem 0 0; }
+.popular-price strong { color: var(--accent-dark); }
 .cta-note-band { width: 100%; color: #9fb0c2; margin-top: .9rem; }
 
 /* =========================================================================
@@ -544,9 +539,6 @@ strong { font-weight: 600; color: var(--ink); }
   .brand-logo { height: 64px; }
   .brand .brand-name { font-size: .98rem; white-space: normal; }
   .nav-toggle { display: flex; }
-  .header-right { gap: .7rem; }
-  .header-call-label { display: none; }
-  .header-call-num { font-size: .92rem; }
   .primary-nav {
     position: fixed; inset: 78px 0 auto 0; flex-direction: column; align-items: stretch;
     background: var(--surface); border-bottom: 1px solid var(--line); padding: 1.2rem 1.5rem 1.6rem;
